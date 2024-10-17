@@ -1,0 +1,322 @@
+/* Utility Classes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-pink {
+    color: #ff4081;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.text-sm {
+    font-size: 12px;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-pink {
+    background-color: #ff4081;
+}
+
+.bg-light-gray {
+    background-color: #f9f9f9;
+}
+
+.border {
+    border: 1px solid #ddd;
+}
+
+.border-2 {
+    border: 2px solid #ddd;
+}
+
+.border-pink {
+    border-color: #ff4081;
+}
+
+.border-top {
+    border-top: 1px solid #ddd;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.rounded-lg {
+    border-radius: 10px;
+}
+
+select {
+    width: 70px;
+    height: 25px;
+    font-weight: 700;
+}
+
+
+.expanded-box {
+    background-color: #fff9fa;
+}
+
+th,
+td {
+    padding: 5px;
+    font-size: 13px;
+
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.ml-14 {
+    margin-left: 14px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.transition {
+    transition: max-height 0.3s ease-out;
+}
+
+.hidden {
+    max-height: 0;
+}
+
+.expanded {
+    max-height: 200px;
+    /* Adjust as needed */
+}
+
+/* Specific Styles */
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 480px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    /* margin-bottom: 20px; */
+    color: #ff4081;
+    font-weight: bold;
+}
+
+.box {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 0;
+    /* margin-bottom: 10px; */
+
+}
+
+.box-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    height: 100px;
+    /* padding: 10px; */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box:hover {
+    background-color: #fff9fa;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 100%;
+    gap: 6px;
+}
+
+.unit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.unit-text {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.discount {
+    background-color: #ff4081;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.price {
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.standard {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.standard-price {
+    margin-right: 20px;
+}
+
+.del {
+    color: gray;
+    font-size: 14px;
+}
+
+.popular {
+    border-color: #ff4081;
+}
+
+.popular-tag {
+    position: absolute;
+    top: -9.5px;
+    right: 0px;
+    background-color: #ff4081;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.box-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    height: 140px;
+    /* border-top: 1px solid #ddd; */
+    padding: 0 10px;
+}
+
+.option {
+    margin: 10px 0;
+}
+
+.summary {
+    display: flex;
+    padding: 0 4px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.free-delivery {
+    color: #ff4081;
+    font-weight: 500;
+}
+
+.amount {
+    font-weight: 300px;
+}
+
+.add-to-cart {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
